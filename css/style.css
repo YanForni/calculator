@@ -130,6 +130,10 @@ html {
     cursor: pointer;
 }
 
+.header__button1--2{
+    opacity: 0;
+}
+
 .header__button2 {
     background: border-box;
     border-radius: 50%;
@@ -144,6 +148,10 @@ html {
     background: var(--Orange);
     border: 0px;
     opacity: 1;
+}
+
+.header__button2--3 {
+    opacity: 0;
 }
 
 .header__button2:hover {
@@ -291,6 +299,11 @@ button {
     background-color: var(--Light-grayish-orange);
 }
 
+.numpad:hover {
+    cursor: pointer;
+    background-color: var(--Grayish-orange);
+}
+
 .numpad--2 {
     height: 4.5rem;
     width: auto;
@@ -304,6 +317,11 @@ button {
     background-color: var(--Light-grayish-yellow);
 }
 
+.numpad--2:hover {
+    cursor: pointer;
+    background-color: var(--Dark-grayish-orange);
+}
+
 .numpad--3 {
     height: 4.5rem;
     width: auto;
@@ -315,6 +333,11 @@ button {
     border-bottom-style: inset;
     border-color: var(--Dark-magenta);
     background-color: var(--Very-dark-violet-key);
+}
+
+.numpad--3:hover {
+    cursor: pointer;
+    background-color: var(--Dark-magenta);
 }
 
 .grid__last-line {
@@ -341,6 +364,11 @@ button {
     border-color: var(--Desaturated-dark-blue-shadow);
 }
 
+.color-button:hover {
+    cursor: pointer;
+    background-color: var(--Desaturated-dark-blue-shadow);
+}
+
 .color-button--2 {
     background-color: var(--Dark-moderate-cyan);
     color: var(--White);
@@ -352,6 +380,11 @@ button {
     border-left: none;
     border-bottom-style: inset;
     border-color: var(--Very-dark-cyan);
+}
+
+.color-button--2:hover {
+    cursor: pointer;
+    background-color: var(--Very-dark-cyan);
 }
 
 .color-button--3 {
@@ -367,6 +400,11 @@ button {
     border-color: var(--Vivid-magenta);
 }
 
+.color-button--3:hover {
+    cursor: pointer;
+    background-color: var(--Vivid-magenta);
+}
+
 .equal-button {
     background-color: var(--Red);
     color: var(--White);
@@ -377,6 +415,11 @@ button {
     border-left: none;
     border-bottom-style: inset;
     border-color: var(--Dark-red);
+}
+
+.equal-button:hover {
+    cursor: pointer;
+    background-color: var(--Dark-red);
 }
 
 .equal-button--2 {
@@ -391,6 +434,11 @@ button {
     border-color: var(--Dark-orange);
 }
 
+.equal-button--2:hover {
+    cursor: pointer;
+    background-color: var(--Dark-orange);
+}
+
 .equal-button--3 {
     background-color: var(--Pure-cyan);
     color:Black;
@@ -401,6 +449,11 @@ button {
     border-left: none;
     border-bottom-style: inset;
     border-color: var(--Soft-cyan);
+}
+
+.equal-button--3:hover {
+    cursor: pointer;
+    background-color: var(--Soft-cyan);
 }
 
 @media (min-width: 999px) {
