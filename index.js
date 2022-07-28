@@ -143,7 +143,7 @@ function print(someString){
 
 function zero() {
     if (firstNumber === result) {
-        firstNumber = ""
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '0'
@@ -155,7 +155,7 @@ function zero() {
 }
 function one() {
     if (firstNumber === result) {
-        firstNumber = ""
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '1'
@@ -166,8 +166,8 @@ function one() {
     }
 }
 function two() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '2'
@@ -178,8 +178,8 @@ function two() {
     }
 }
 function three() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '3'
@@ -190,8 +190,8 @@ function three() {
     }
 }
 function four() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '4'
@@ -202,8 +202,8 @@ function four() {
     }
 }
 function five() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '5'
@@ -214,8 +214,8 @@ function five() {
     }
 }
 function six() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '6'
@@ -226,8 +226,8 @@ function six() {
     }
 }
 function seven() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '7'
@@ -238,8 +238,8 @@ function seven() {
     }
 }
 function eight() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '8'
@@ -250,8 +250,8 @@ function eight() {
     }
 }
 function nine() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     if (operator == undefined) {
         firstNumber += '9'
@@ -262,8 +262,8 @@ function nine() {
     }
 }
 function dot() {
-    if (firstNumber === result) {
-        firstNumber = ""
+    if (firstNumber === result && operator == undefined) {
+        reset()
     }
     let firstNumDot, secondNumDot
     firstNumDot = !(firstNumber.includes("."))
