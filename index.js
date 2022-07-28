@@ -142,7 +142,7 @@ function print(someString){
 }
 
 function zero() {
-    if (firstNumber === result) {
+    if (firstNumber === result && operator == undefined) {
         reset()
     }
     if (operator == undefined) {
@@ -154,7 +154,7 @@ function zero() {
     }
 }
 function one() {
-    if (firstNumber === result) {
+    if (firstNumber === result && operator == undefined) {
         reset()
     }
     if (operator == undefined) {
