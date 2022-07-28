@@ -142,6 +142,9 @@ function print(someString){
 }
 
 function zero() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '0'
         print(firstNumber)
@@ -151,6 +154,9 @@ function zero() {
     }
 }
 function one() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '1'
         print(firstNumber)
@@ -160,6 +166,9 @@ function one() {
     }
 }
 function two() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '2'
         print(firstNumber)
@@ -169,6 +178,9 @@ function two() {
     }
 }
 function three() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '3'
         print(firstNumber)
@@ -178,6 +190,9 @@ function three() {
     }
 }
 function four() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '4'
         print(firstNumber)
@@ -187,6 +202,9 @@ function four() {
     }
 }
 function five() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '5'
         print(firstNumber)
@@ -196,6 +214,9 @@ function five() {
     }
 }
 function six() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '6'
         print(firstNumber)
@@ -205,6 +226,9 @@ function six() {
     }
 }
 function seven() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '7'
         print(firstNumber)
@@ -214,6 +238,9 @@ function seven() {
     }
 }
 function eight() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '8'
         print(firstNumber)
@@ -223,6 +250,9 @@ function eight() {
     }
 }
 function nine() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     if (operator == undefined) {
         firstNumber += '9'
         print(firstNumber)
@@ -232,6 +262,9 @@ function nine() {
     }
 }
 function dot() {
+    if (firstNumber === result) {
+        firstNumber = ""
+    }
     let firstNumDot, secondNumDot
     firstNumDot = !(firstNumber.includes("."))
     secondNumDot = !(secondNumber.includes("."))
