@@ -134,12 +134,10 @@ let secondNumber = ""
 let operator
 
 function print(someString){
-    String(someString)
-    // if ((someString.includes("."))==true) {
-    //     someString.replaceAll(".",",")
-    // }
-    console.log(someString);
-    screenH.innerText = `${someString}`
+    let something = String(someString)
+    something = something.replaceAll(".",",")
+    console.log(something);
+    screenH.innerText = `${something}`
 }
 
 function zero() {
@@ -244,6 +242,11 @@ function dot() {
 
 
 function multiply() {
+    // if (operator != undefined) {
+    //     equal()
+    //     firstNumber += equal
+        
+    // }
     operator = '*'
     print(operator)
 }
