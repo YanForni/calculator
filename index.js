@@ -242,25 +242,48 @@ function dot() {
 
 
 function multiply() {
-    // if (operator != undefined) {
-    //     equal()
-    //     firstNumber += equal
-        
-    // }
-    operator = '*'
-    print(operator)
+    if (operator != undefined) {
+        equal()
+        firstNumber += result
+        result = ""
+        operator = '*'
+    } else {
+        operator = '*'
+        print(operator)
+    }
 }
 function divide() {
-    operator = '/'
-    print(operator)
+    if (operator != undefined) {
+        equal()
+        firstNumber += result
+        result = ""
+        operator = '/'
+    } else {
+        operator = '/'
+        print(operator)
+    }
 }
 function minus() {
-    operator = '-'
-    print(operator)
+    if (operator != undefined) {
+        equal()
+        firstNumber += result
+        result = ""
+        operator = '-'
+    } else {
+        operator = '-'
+        print(operator)
+    }
 }
 function plus() {
+    if (operator != undefined) {
+        equal()
+        firstNumber += result
+        result = ""
+        operator = '+'
+    } else {
     operator = '+'
     print(operator)
+    }
 }
 
 function reset() {
