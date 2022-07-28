@@ -251,7 +251,6 @@ function dot() {
 function multiply() {
     if (operator != undefined) {
         equal()
-        firstNumber += result
         result = ""
         operator = '*'
     } else {
@@ -262,7 +261,6 @@ function multiply() {
 function divide() {
     if (operator != undefined) {
         equal()
-        firstNumber += result
         result = ""
         operator = '/'
     } else {
@@ -273,7 +271,6 @@ function divide() {
 function minus() {
     if (operator != undefined) {
         equal()
-        firstNumber += result
         result = ""
         operator = '-'
     } else {
@@ -284,12 +281,11 @@ function minus() {
 function plus() {
     if (operator != undefined) {
         equal()
-        firstNumber += result
         result = ""
         operator = '+'
     } else {
-    operator = '+'
-    print(operator)
+        operator = '+'
+        print(operator)
     }
 }
 
@@ -310,7 +306,7 @@ function del() {
         print(secondNumber)
     } else if (operator != undefined)
     {
-        operator = ""
+        operator = undefined
         print(firstNumber)
     } else if (operator == undefined){
         arrayString = Array.from(firstNumber)
@@ -318,6 +314,7 @@ function del() {
         firstNumber = (String(arrayString).replaceAll(",",""))
         print(firstNumber)
     } 
+
 }
 
 
@@ -341,7 +338,7 @@ function equal() {
         default:
             break;}
     secondNumber = ""
-    firstNumber = ""
+    firstNumber = result
     operator = undefined
     print(result)
 }
