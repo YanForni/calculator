@@ -213,7 +213,7 @@ function plus() {
 }
 
 function reset() {
-    operator =""
+    operator = undefined
     firstNumber = ""
     secondNumber = ""
     result = ""
