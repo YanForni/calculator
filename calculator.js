@@ -1,16 +1,123 @@
-const key0 = document.querySelector('.key0')
-const key1 = document.querySelector('.key1')
-const key3 = document.querySelector('.key2')
-const key2 = document.querySelector('.key3')
-const key4 = document.querySelector('.key4')
-const key5 = document.querySelector('.key5')
-const key6 = document.querySelector('.key6')
-const key7 = document.querySelector('.key7')
-const key8 = document.querySelector('.key8')
-const key9 = document.querySelector('.key9')
-const keyPlus = document.querySelector('.key-plus')
-const keyMinus = document.querySelector('.key-minus')
-const keyDot = document.querySelector('.key-dot')
-const keyX = document.querySelector('.key-multiply')
-const keyDivide = document.querySelector('.key-divide')
-const keyReset = document.querySelector('.key-reset')
+let firstNumber =[]
+let secondNumber =[]
+let operator
+
+function zero() {
+    if (operator == undefined) {
+        firstNumber.push(0)
+    } else {
+        secondNumber.push(0)
+    }
+}
+function one() {
+    if (operator == undefined) {
+        firstNumber.push(1)
+    } else {
+        secondNumber.push(1)
+    }
+}
+function two() {
+    if (operator == undefined) {
+        firstNumber.push(2)
+    } else {
+        secondNumber.push(2)
+    }
+}
+function three() {
+    if (operator == undefined) {
+        firstNumber.push(3)
+    } else {
+        secondNumber.push(3)
+    }
+}
+function four() {
+    if (operator == undefined) {
+        firstNumber.push(4)
+    } else {
+        secondNumber.push(4)
+    }
+}
+function five() {
+    if (operator == undefined) {
+        firstNumber.push(5)
+    } else {
+        secondNumber.push(5)
+    }
+}
+function six() {
+    if (operator == undefined) {
+        firstNumber.push(6)
+    } else {
+        secondNumber.push(6)
+    }
+}
+function seven() {
+    if (operator == undefined) {
+        firstNumber.push(7)
+    } else {
+        secondNumber.push(7)
+    }
+}
+function eight() {
+    if (operator == undefined) {
+        firstNumber.push(8)
+    } else {
+        secondNumber.push(8)
+    }
+}
+function nine() {
+    if (operator == undefined) {
+        firstNumber.push(9)
+    } else {
+        secondNumber.push(9)
+    }
+}
+function dot() {
+    if (operator == undefined) {
+        firstNumber.push('.')
+    } else {
+        secondNumber.push('.')
+    }
+}
+
+
+function multiply() {
+    operator = '*'
+}
+function divide() {
+    operator = '/'
+}
+function minus() {
+    operator = '-'
+}
+function plus() {
+    operator = '+'
+}
+
+function equal() {
+    let firstString
+    firstString = String(firstNumber).replaceAll(",","")
+    firstNumber = Number(firstString)
+    let secondString
+    secondString = String(secondNumber).replaceAll(",","")
+    secondNumber = Number(secondString)
+    let result 
+    switch (operator) {
+        case '+':
+            result = firstNumber + secondNumber;        
+            break;
+        case '-':
+            result = firstNumber - secondNumber;
+            break;
+        case '*':
+            result = firstNumber * secondNumber;
+            break;
+        case '/':
+            result = firstNumber / secondNumber;
+            break;
+        default:
+            break;
+    }
+    
+}
+

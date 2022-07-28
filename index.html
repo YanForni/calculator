@@ -39,36 +39,35 @@
     <main>
         <div class="screen">
             <h1 class="screen__h">
-                56656,56
+
             </h1>
         </div>
         <div class="grid">
             
             <div class="grid__buttons">
-                <button class="numpad key7">7</button>
-                <button class="numpad key8">8</button>
-                <button class="numpad key9">9</button>
-                <button class="numpad color-button">DEL</button>
-                <button class="numpad key4">4</button>
-                <button class="numpad key5">5</button>
-                <button class="numpad key6">6</button>
-                <button class="numpad key-plus">+</button>
-                <button class="numpad key1">1</button>
-                <button class="numpad key2">2</button>
-                <button class="numpad key3">3</button>
-                <button class="numpad key-minus">-</button>
-                <button class="numpad key-dot">.</button>
-                <button class="numpad key0">0</button>
-                <button class="numpad key-divide">/</button>
-                <button class="numpad key-multiply">x</button>
+                <button class="numpad" onclick ="seven()">7</button>
+                <button class="numpad" onclick = "eight()">8</button>
+                <button class="numpad" onclick = "nine()">9</button>
+                <button class="numpad onclick color-button" onclick="del()">DEL</button>
+                <button class="numpad" onclick = "four()">4</button>
+                <button class="numpad" onclick = "five()">5</button>
+                <button class="numpad" onclick = "six()">6</button>
+                <button class="numpad" onclick = "plus()">+</button>
+                <button class="numpad" onclick = "one()">1</button>
+                <button class="numpad" onclick = "two()">2</button>
+                <button class="numpad" onclick = "three()">3</button>
+                <button class="numpad" onclick = "minus()">-</button>
+                <button class="numpad" onclick = "dot()">.</button>
+                <button class="numpad" onclick = "zero()">0</button>
+                <button class="numpad" onclick = "divide()">/</button>
+                <button class="numpad" onclick = "multiply()">x</button>
             </div>
             <div class="grid__last-line">
-                <button class="color-button key-reset">RESET</button>
-                <button class="equal-button">=</button>
+                <button class="color-button" onclick="reset()">RESET</button>
+                <button class="equal-button" onclick="equal()">=</button>
             </div>
         </div>
     </main>
     <script src="index.js"></script>
-    <script src="calculator.js"></script>
 </body>
 </html>
