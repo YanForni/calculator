@@ -425,12 +425,12 @@ button {
         font-family: 'League Spartan';
         font-weight: 700;
         margin: 0rem 21rem;
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
 
     .grid {
         padding: 18.5px;
-        height: 47vh;
+        height: 26.5rem;
         border-radius: 10px;
     }
 

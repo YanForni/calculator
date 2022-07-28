@@ -129,6 +129,7 @@ themeDark.addEventListener('click', () => {
 
 /*===================================Calculator============================================*/
 
+
 let firstNumber = ""
 let secondNumber = ""
 let operator
@@ -344,4 +345,3 @@ function equal() {
     operator = undefined
     print(result)
 }
-
