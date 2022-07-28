@@ -39,21 +39,20 @@ html {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--1 {
     color: var(--White);
-    display: flex;
-    justify-content: space-between;
 }
 
-.header--2{
+.header--2 {
     color: var(--Very-dark-grayish-yellow);
-    display: flex;
-    justify-content: space-between;
 }
 
-.header--3{
+.header--3 {
     color: var(--Light-yellow);
-    display: flex;
-    justify-content: space-between;
 }
 
 .header__h {
@@ -79,28 +78,22 @@ html {
 }
 
 .header__buttons {
-    background-color: var(--Very-dark-desaturated-blue-toggle);
     width: fit-content;
     border-radius: 20px;
     display: flex;
     padding: 2px;
-    
+}
+
+.header__buttons--1 {
+    background-color: var(--Very-dark-desaturated-blue-toggle);
 }
 
 .header__buttons--2 {
     background-color: var(--Grayish-red);
-    width: fit-content;
-    border-radius: 20px;
-    display: flex;
-    padding: 2px;
 }
 
 .header__buttons--3 {
     background-color: var(--Very-dark-violet-all);
-    width: fit-content;
-    border-radius: 20px;
-    display: flex;
-    padding: 2px;
 }
 
 .header__buttons > button {
@@ -108,41 +101,27 @@ html {
     padding: 8px;
 }
 
-.header__buttons--2 > button {
-    margin: 3px;
-    padding: 8px;
-}
-
-.header__buttons--3 > button {
-    margin: 3px;
-    padding: 8px;
-}
-
-.header__button1 {
+.header__button1--active {
     background: border-box;
     border-radius: 50%;
     background: var(--Red);
     border: 0px;
 }
 
-.header__button1:hover {
+.header__button1--inactive{
+    background: border-box;
+    border-radius: 50%;
+    background: var(--Red);
+    border: 0px;
+    opacity: 0;
+}
+
+.header__button1--inactive:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-.header__button1--2{
-    opacity: 0;
-}
-
-.header__button2 {
-    background: border-box;
-    border-radius: 50%;
-    background: var(--Orange);
-    border: 0px;
-    opacity: 0;;
-}
-
-.header__button2--2 {
+.header__button2--active {
     background: border-box;
     border-radius: 50%;
     background: var(--Orange);
@@ -150,16 +129,20 @@ html {
     opacity: 1;
 }
 
-.header__button2--3 {
+.header__button2--inactive {
+    background: border-box;
+    border-radius: 50%;
+    background: var(--Orange);
+    border: 0px;
     opacity: 0;
 }
 
-.header__button2:hover {
+.header__button2--inactive:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-.header__button3 {
+.header__button3--inactive {
     background: border-box;
     border-radius: 50%;
     background: var(--Pure-cyan);
@@ -167,7 +150,7 @@ html {
     opacity: 0;
 }
 
-.header__button3--3 {
+.header__button3--active {
     background: border-box;
     border-radius: 50%;
     background: var(--Pure-cyan);
@@ -175,7 +158,7 @@ html {
     opacity: 1;
 }
 
-.header__button3:hover {
+.header__button3--inactive:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -183,18 +166,17 @@ html {
 .body {
     font-family: 'League Spartan';
     font-weight: 700;
+}
+
+.body--1 {
     background-color: var(--Very-dark-desaturated-blue-main);
 }
 
 .body--2 {
-    font-family: 'League Spartan';
-    font-weight: 700;
     background-color: var(--Light-gray);
 }
 
 .body--3 {
-    font-family: 'League Spartan';
-    font-weight: 700;
     background-color: var(--Very-dark-violet-bg);
 }
 
@@ -202,36 +184,25 @@ html {
     height: 12vh;
     background: border-box;
     border-radius: 10px;
-    background-color: var(--Very-dark-desaturated-blue-screen);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0px 0 1rem 0;
+}
+
+.screen--1 {
+    background-color: var(--Very-dark-desaturated-blue-screen);
 }
 
 .screen--2 {
-    height: 12vh;
-    background: border-box;
-    border-radius: 10px;
     background-color: var(--Very-light-gray);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0px 0 1rem 0;
 }
 
 .screen--3 {
-    height: 12vh;
-    background: border-box;
-    border-radius: 10px;
     background-color: var(--Very-dark-violet-all);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0px 0 1rem 0;
 }
 
-.screen__h {
+.screen__h--1 {
     color: var(--White);
     font-size: 40px;
     margin-right: 20px;
@@ -257,7 +228,7 @@ button {
 
 
 
-.grid {
+.grid--1 {
     padding: 18.5px;
     background-color: var(--Very-dark-desaturated-blue-toggle);
     height: 26.5rem;
@@ -286,7 +257,7 @@ button {
     margin-bottom: var(--global-rem);
 }
 
-.numpad {
+.numpad--1 {
     height: 4.5rem;
     width: auto;
     border-radius: 10px;
@@ -299,7 +270,7 @@ button {
     background-color: var(--Light-grayish-orange);
 }
 
-.numpad:hover {
+.numpad--1:hover {
     cursor: pointer;
     background-color: var(--Grayish-orange);
 }
@@ -351,7 +322,7 @@ button {
     border-radius: 10px;
 }
 
-.color-button {
+.color-button--1 {
     background-color: var(--Desaturated-dark-blue-bg);
     color: var(--White);
     font-size: 22px;
@@ -364,7 +335,7 @@ button {
     border-color: var(--Desaturated-dark-blue-shadow);
 }
 
-.color-button:hover {
+.color-button--1:hover {
     cursor: pointer;
     background-color: var(--Desaturated-dark-blue-shadow);
 }
@@ -405,7 +376,7 @@ button {
     background-color: var(--Vivid-magenta);
 }
 
-.equal-button {
+.equal-button--1 {
     background-color: var(--Red);
     color: var(--White);
     border-radius: 10px;
@@ -417,7 +388,7 @@ button {
     border-color: var(--Dark-red);
 }
 
-.equal-button:hover {
+.equal-button--1:hover {
     cursor: pointer;
     background-color: var(--Dark-red);
 }
@@ -463,13 +434,13 @@ button {
         margin: 0rem 21rem;
         padding-top: 5rem;
     }
-    
+
     .grid {
         padding: 18.5px;
         height: 47vh;
         border-radius: 10px;
     }
-    
+
     .numpad {
         height: 4.5rem;
         width: auto;
@@ -481,4 +452,5 @@ button {
         border-bottom-style: inset;
     }
     
+
 }

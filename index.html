@@ -12,9 +12,9 @@
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <title>Calculadora</title>
 </head>
-<body class="body">
+<body class="body body--1">
 
-    <header class="header">
+    <header class="header header--1">
         <h1 class="header__h">
             calc
         </h1>
@@ -28,43 +28,43 @@
                     <span>2</span>
                     <span>3</span>
                 </div>
-                <div class="header__buttons">
-                    <button class="header__button1"></button>
-                    <button class="header__button2"></button>
-                    <button class="header__button3"></button>
+                <div class="header__buttons header__buttons--1">
+                    <button class="header__button1 header__button1--active"></button>
+                    <button class="header__button2 header__button1--inactive"></button>
+                    <button class="header__button3 header__button3--inactive"></button>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="screen">
-            <h1 class="screen__h">
-
+        <div class="screen screen--1">
+            <h1 class="screen__h screen__h--1">
+                
             </h1>
         </div>
-        <div class="grid">
+        <div class="grid grid--1">
             
             <div class="grid__buttons">
-                <button class="numpad" onclick ="seven()">7</button>
-                <button class="numpad" onclick = "eight()">8</button>
-                <button class="numpad" onclick = "nine()">9</button>
-                <button class="numpad onclick color-button" onclick="del()">DEL</button>
-                <button class="numpad" onclick = "four()">4</button>
-                <button class="numpad" onclick = "five()">5</button>
-                <button class="numpad" onclick = "six()">6</button>
-                <button class="numpad" onclick = "plus()">+</button>
-                <button class="numpad" onclick = "one()">1</button>
-                <button class="numpad" onclick = "two()">2</button>
-                <button class="numpad" onclick = "three()">3</button>
-                <button class="numpad" onclick = "minus()">-</button>
-                <button class="numpad" onclick = "dot()">.</button>
-                <button class="numpad" onclick = "zero()">0</button>
-                <button class="numpad" onclick = "divide()">/</button>
-                <button class="numpad" onclick = "multiply()">x</button>
+                <button class="numpad numpad--1" onclick = "eight()">8</button>
+                <button class="numpad numpad--1" onclick = "nine()">9</button>
+                <button class="numpad numpad--1" onclick ="seven()">7</button>
+                <button class="numpad numpad--1 color-button color-button--1" onclick="del()">DEL</button>
+                <button class="numpad numpad--1" onclick = "four()">4</button>
+                <button class="numpad numpad--1" onclick = "five()">5</button>
+                <button class="numpad numpad--1" onclick = "six()">6</button>
+                <button class="numpad numpad--1" onclick = "plus()">+</button>
+                <button class="numpad numpad--1" onclick = "one()">1</button>
+                <button class="numpad numpad--1" onclick = "two()">2</button>
+                <button class="numpad numpad--1" onclick = "three()">3</button>
+                <button class="numpad numpad--1" onclick = "minus()">-</button>
+                <button class="numpad numpad--1" onclick = "dot()">.</button>
+                <button class="numpad numpad--1" onclick = "zero()">0</button>
+                <button class="numpad numpad--1" onclick = "divide()">/</button>
+                <button class="numpad numpad--1" onclick = "multiply()">x</button>
             </div>
             <div class="grid__last-line">
-                <button class="color-button" onclick="reset()">RESET</button>
-                <button class="equal-button" onclick="equal()">=</button>
+                <button class="color-button color-button--1" onclick="reset()">RESET</button>
+                <button class="equal-button equal-button--1" onclick="equal()">=</button>
             </div>
         </div>
     </main>
