@@ -231,15 +231,21 @@ function nine() {
     }
 }
 function dot() {
-    if (operator == undefined) {
+    let firstNumDot, secondNumDot
+    firstNumDot = !(firstNumber.includes("."))
+    secondNumDot = !(secondNumber.includes("."))
+    if (operator == undefined && firstNumDot) {    
         firstNumber += '.'
         print(firstNumber)
-    } else {
+    } else if (operator !=undefined && secondNumDot) {
         secondNumber += '.'
+        print(secondNumber)    
+    } else if (operator == undefined) {
+        print(firstNumber)
+    } else {
         print(secondNumber)
     }
 }
-
 
 function multiply() {
     if (operator != undefined) {
@@ -304,13 +310,13 @@ function del() {
     } else if (operator != undefined)
     {
         operator = ""
-        print(operator)
-    } else {
+        print(firstNumber)
+    } else if (operator == undefined){
         arrayString = Array.from(firstNumber)
         arrayString.pop()
         firstNumber = (String(arrayString).replaceAll(",",""))
         print(firstNumber)
-    }
+    } 
 }
 
 

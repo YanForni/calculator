@@ -82,6 +82,7 @@ html {
     border-radius: 20px;
     display: flex;
     padding: 2px;
+    justify-content: space-around;
 }
 
 .header__buttons--1 {
@@ -119,6 +120,13 @@ html {
 .header__button1--inactive:hover {
     opacity: 1;
     cursor: pointer;
+    background: #f96b5c;
+}
+
+.header__button1--active:hover {
+    opacity: 1;
+    cursor: pointer;
+    background: #f96b5c;
 }
 
 .header__button2--active {
@@ -140,6 +148,13 @@ html {
 .header__button2--inactive:hover {
     opacity: 1;
     cursor: pointer;
+    background-color: #fa8c3c;
+}
+
+.header__button2--active:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #fa8c3c;
 }
 
 .header__button3--inactive {
@@ -161,6 +176,13 @@ html {
 .header__button3--inactive:hover {
     opacity: 1;
     cursor: pointer;
+    background: #6febe5;
+}
+
+.header__button3--active:hover {
+    opacity: 1;
+    cursor: pointer;
+    background: #6febe5;
 }
 
 .body {
@@ -260,36 +282,46 @@ button {
     border-right: none;
     border-left: none;
     border-bottom-style: inset;
+    font-size: 3rem;
 }
 
 .numpad--1 {
     border-color: var(--Grayish-orange);
     background-color: var(--Light-grayish-orange);
+    font-family: 'League Spartan';
+    font-weight: 700;
+    color: var(--Very-dark-grayish-blue);
 }
 
 .numpad--1:hover {
     cursor: pointer;
-    background-color: var(--Grayish-orange);
+    background-color: var(--White);
 }
 
 .numpad--2 {
     border-color: var(--Dark-grayish-orange);
     background-color: var(--Light-grayish-yellow);
+    font-family: 'League Spartan';
+    font-weight: 700;
+    color: var(--Very-dark-grayish-yellow);
 }
 
 .numpad--2:hover {
     cursor: pointer;
-    background-color: var(--Dark-grayish-orange);
+    background-color: #f9f6f2;
 }
 
 .numpad--3 {
     border-color: var(--Dark-magenta);
     background-color: var(--Very-dark-violet-key);
+    font-family: 'League Spartan';
+    font-weight: 700;
+    color: var(--Light-yellow);
 }
 
 .numpad--3:hover {
     cursor: pointer;
-    background-color: var(--Dark-magenta);
+    background-color: #6b34ac;
 }
 
 .grid__last-line {
@@ -321,7 +353,7 @@ button {
 
 .color-button--1:hover {
     cursor: pointer;
-    background-color: var(--Desaturated-dark-blue-shadow);
+    background-color: #a2b3e1;
 }
 
 .color-button--2 {
@@ -332,7 +364,7 @@ button {
 
 .color-button--2:hover {
     cursor: pointer;
-    background-color: var(--Very-dark-cyan);
+    background-color: #62b5bd;
 }
 
 .color-button--3 {
@@ -343,7 +375,7 @@ button {
 
 .color-button--3:hover {
     cursor: pointer;
-    background-color: var(--Vivid-magenta);
+    background-color: #8731b0;
 }
 
 .equal-button {
@@ -363,7 +395,7 @@ button {
 
 .equal-button--1:hover {
     cursor: pointer;
-    background-color: var(--Dark-red);
+    background-color: #f96b5c;
 }
 
 .equal-button--2 {
@@ -374,7 +406,7 @@ button {
 
 .equal-button--2:hover {
     cursor: pointer;
-    background-color: var(--Dark-orange);
+    background-color: #fa8c3c;
 }
 
 .equal-button--3 {
@@ -385,7 +417,7 @@ button {
 
 .equal-button--3:hover {
     cursor: pointer;
-    background-color: var(--Soft-cyan);
+    background-color: #6febe5;
 }
 
 @media (min-width: 999px) {
