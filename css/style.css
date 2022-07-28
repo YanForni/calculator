@@ -202,22 +202,21 @@ html {
     background-color: var(--Very-dark-violet-all);
 }
 
-.screen__h--1 {
-    color: var(--White);
+.screen__h {
     font-size: 40px;
     margin-right: 20px;
+}
+
+.screen__h--1 {
+    color: var(--White);
 }
 
 .screen__h--2 {
     color: var(--Very-dark-grayish-yellow);
-    font-size: 40px;
-    margin-right: 20px;
 }
 
 .screen__h--3 {
     color: var(--Light-yellow);
-    font-size: 40px;
-    margin-right: 20px;
 }
 
 button {
@@ -226,27 +225,22 @@ button {
     font-weight: 700;
 }
 
-
-
-.grid--1 {
+.grid {
     padding: 18.5px;
-    background-color: var(--Very-dark-desaturated-blue-toggle);
     height: 26.5rem;
     border-radius: 10px;
+}
+
+.grid--1 {
+    background-color: var(--Very-dark-desaturated-blue-toggle);
 }
 
 .grid--2 {
     background-color:  var(--Grayish-red);
-    padding: 18.5px;
-    height: 26.5rem;
-    border-radius: 10px;
 }
 
 .grid--3 {
     background-color:  var(--Very-dark-violet-all);
-    padding: 18.5px;
-    height: 26.5rem;
-    border-radius: 10px;
 }
 
 .grid__buttons {
@@ -257,7 +251,7 @@ button {
     margin-bottom: var(--global-rem);
 }
 
-.numpad--1 {
+.numpad {
     height: 4.5rem;
     width: auto;
     border-radius: 10px;
@@ -266,6 +260,9 @@ button {
     border-right: none;
     border-left: none;
     border-bottom-style: inset;
+}
+
+.numpad--1 {
     border-color: var(--Grayish-orange);
     background-color: var(--Light-grayish-orange);
 }
@@ -276,14 +273,6 @@ button {
 }
 
 .numpad--2 {
-    height: 4.5rem;
-    width: auto;
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Dark-grayish-orange);
     background-color: var(--Light-grayish-yellow);
 }
@@ -294,14 +283,6 @@ button {
 }
 
 .numpad--3 {
-    height: 4.5rem;
-    width: auto;
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Dark-magenta);
     background-color: var(--Very-dark-violet-key);
 }
@@ -322,9 +303,7 @@ button {
     border-radius: 10px;
 }
 
-.color-button--1 {
-    background-color: var(--Desaturated-dark-blue-bg);
-    color: var(--White);
+.color-button {
     font-size: 22px;
     border-radius: 10px;
     border-top: none;
@@ -332,6 +311,11 @@ button {
     border-right: none;
     border-left: none;
     border-bottom-style: inset;
+}
+
+.color-button--1 {
+    color: var(--White);
+    background-color: var(--Desaturated-dark-blue-bg);
     border-color: var(--Desaturated-dark-blue-shadow);
 }
 
@@ -343,13 +327,6 @@ button {
 .color-button--2 {
     background-color: var(--Dark-moderate-cyan);
     color: var(--White);
-    font-size: 22px;
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Very-dark-cyan);
 }
 
@@ -361,13 +338,6 @@ button {
 .color-button--3 {
     background-color: var(--Dark-violet);
     color: var(--Light-yellow);
-    font-size: 22px;
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Vivid-magenta);
 }
 
@@ -376,15 +346,18 @@ button {
     background-color: var(--Vivid-magenta);
 }
 
-.equal-button--1 {
-    background-color: var(--Red);
-    color: var(--White);
+.equal-button {
     border-radius: 10px;
     border-top: none;
     border-width: 4px;
     border-right: none;
     border-left: none;
     border-bottom-style: inset;
+}
+
+.equal-button--1 {
+    background-color: var(--Red);
+    color: var(--White);
     border-color: var(--Dark-red);
 }
 
@@ -396,12 +369,6 @@ button {
 .equal-button--2 {
     background-color: var(--Orange);
     color: var(--White);
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Dark-orange);
 }
 
@@ -413,12 +380,6 @@ button {
 .equal-button--3 {
     background-color: var(--Pure-cyan);
     color:Black;
-    border-radius: 10px;
-    border-top: none;
-    border-width: 4px;
-    border-right: none;
-    border-left: none;
-    border-bottom-style: inset;
     border-color: var(--Soft-cyan);
 }
 
