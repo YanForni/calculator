@@ -231,6 +231,19 @@ html {
     overflow-x: auto;
 }
 
+.screen__h::-webkit-scrollbar{
+    opacity: 0;
+}
+
+.screen__h::-webkit-scrollbar-track {
+    opacity: 0;        
+}
+
+.screen__h::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 1px solid 
+}
+
 .screen__h--1 {
     color: var(--White);
 }

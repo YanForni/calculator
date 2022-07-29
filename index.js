@@ -376,7 +376,6 @@ function equal() {
             break;
         default:
             break;}
-    result = result.toFixed(6)
     secondNumber = ""
     firstNumber = result
     operator = undefined
