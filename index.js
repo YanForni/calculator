@@ -353,7 +353,13 @@ function del() {
 
 let result 
 function equal() {
+    if (firstNumber == '.') {
+        firstNumber = 0
+    }
     firstNumber = Number(firstNumber)
+    if (secondNumber == '.') {
+        secondNumber = 0
+    }
     secondNumber = Number(secondNumber)
     switch (operator) {
         case '+':
@@ -370,6 +376,7 @@ function equal() {
             break;
         default:
             break;}
+    result = result.toFixed(6)
     secondNumber = ""
     firstNumber = result
     operator = undefined
