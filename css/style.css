@@ -227,6 +227,8 @@ html {
 .screen__h {
     font-size: 40px;
     margin-right: 20px;
+    margin-left: 20px;
+    overflow-x: auto;
 }
 
 .screen__h--1 {
