@@ -15,6 +15,30 @@ const equalButton = document.querySelector(".equal-button");
 const numbers = document.querySelectorAll(".numbers");
 const operators = document.querySelectorAll(".operators");
 
+function adding(theme) {
+  header.classList.add(`header--${theme}`);
+  headerButtons.classList.add(`header__buttons--${theme}`);
+  body.classList.add(`body--${theme}`);
+  screen.classList.add(`screen--${theme}`);
+  screenH.classList.add(`screen__h--${theme}`);
+  grid.classList.add(`grid--${theme}`);
+  equalButton.classList.add(`equal-button--${theme}`);
+  numpad.forEach((button) => button.classList.add(`numpad--${theme}`));
+  colorButton.forEach((button) => button.classList.add(`color-button--${theme}`));
+}
+
+function removing(theme) {
+  header.classList.remove(`header--${theme}`);
+  headerButtons.classList.remove(`header__buttons--${theme}`);
+  body.classList.remove(`body--${theme}`);
+  screen.classList.remove(`screen--${theme}`);
+  screenH.classList.remove(`screen__h--${theme}`);
+  grid.classList.remove(`grid--${theme}`);
+  equalButton.classList.remove(`equal-button--${theme}`);
+  numpad.forEach((button) => button.classList.remove(`numpad--${theme}`));
+  colorButton.forEach((button) => button.classList.remove(`color-button--${theme}`));
+}
+
 themeDefault.addEventListener("click", () => {
   themeDefault.classList.remove("header__button1--inactive");
   themeDefault.classList.add("header__button1--active");
@@ -23,34 +47,9 @@ themeDefault.addEventListener("click", () => {
   themeDark.classList.remove("header__button3--active");
   themeDark.classList.add("header__button3--inactive");
 
-  header.classList.remove("header--2");
-  header.classList.remove("header--3");
-  headerButtons.classList.remove("header__buttons--2");
-  headerButtons.classList.remove("header__buttons--3");
-  body.classList.remove("body--3");
-  body.classList.remove("body--2");
-  screen.classList.remove("screen--2");
-  screen.classList.remove("screen--3");
-  screenH.classList.remove("screen__h--2");
-  screenH.classList.remove("screen__h--3");
-  grid.classList.remove("grid--2");
-  grid.classList.remove("grid--3");
-  equalButton.classList.remove("equal-button--2");
-  equalButton.classList.remove("equal-button--3");
-  numpad.forEach((button) => button.classList.remove("numpad--2"));
-  numpad.forEach((button) => button.classList.remove("numpad--3"));
-  colorButton.forEach((button) => button.classList.remove("color-button--2"));
-  colorButton.forEach((button) => button.classList.remove("color-button--3"));
-
-  header.classList.add("header--1");
-  headerButtons.classList.add("header__buttons--1");
-  body.classList.add("body--1");
-  screen.classList.add("screen--1");
-  screenH.classList.add("screen__h--1");
-  grid.classList.add("grid--1");
-  equalButton.classList.add("equal-button--1");
-  numpad.forEach((button) => button.classList.add("numpad--1"));
-  colorButton.forEach((button) => button.classList.add("color-button--1"));
+  adding(1)
+  removing(2)
+  removing(3)
 });
 
 themeLight.addEventListener("click", () => {
@@ -61,34 +60,9 @@ themeLight.addEventListener("click", () => {
   themeDark.classList.remove("header__button3--active");
   themeDark.classList.add("header__button3--inactive");
 
-  header.classList.remove("header--1");
-  header.classList.remove("header--3");
-  headerButtons.classList.remove("header__buttons--1");
-  headerButtons.classList.remove("header__buttons--3");
-  body.classList.remove("body--1");
-  body.classList.remove("body--3");
-  screen.classList.remove("screen--1");
-  screen.classList.remove("screen--3");
-  screenH.classList.remove("screen__h--1");
-  screenH.classList.remove("screen__h--3");
-  grid.classList.remove("grid--1");
-  grid.classList.remove("grid--3");
-  equalButton.classList.remove("equal-button--1");
-  equalButton.classList.remove("equal-button--3");
-  numpad.forEach((button) => button.classList.remove("numpad--1"));
-  numpad.forEach((button) => button.classList.remove("numpad--3"));
-  colorButton.forEach((button) => button.classList.remove("color-button--1"));
-  colorButton.forEach((button) => button.classList.remove("color-button--3"));
-
-  header.classList.add("header--2");
-  headerButtons.classList.add("header__buttons--2");
-  body.classList.add("body--2");
-  screen.classList.add("screen--2");
-  screenH.classList.add("screen__h--2");
-  grid.classList.add("grid--2");
-  numpad.forEach((button) => button.classList.add("numpad--2"));
-  equalButton.classList.add("equal-button--2");
-  colorButton.forEach((button) => button.classList.add("color-button--2"));
+  adding(2)
+  removing(1)
+  removing(3)
 });
 
 themeDark.addEventListener("click", () => {
@@ -99,34 +73,9 @@ themeDark.addEventListener("click", () => {
   themeDark.classList.remove("header__button3--inactive");
   themeDark.classList.add("header__button3--active");
 
-  header.classList.remove("header--2");
-  header.classList.remove("header--1");
-  headerButtons.classList.remove("header__buttons--2");
-  headerButtons.classList.remove("header__buttons--1");
-  body.classList.remove("body--1");
-  body.classList.remove("body--2");
-  screen.classList.remove("screen--2");
-  screen.classList.remove("screen--1");
-  screenH.classList.remove("screen__h--2");
-  screenH.classList.remove("screen__h--1");
-  grid.classList.remove("grid--2");
-  grid.classList.remove("grid--1");
-  equalButton.classList.remove("equal-button--2");
-  equalButton.classList.remove("equal-button--1");
-  numpad.forEach((button) => button.classList.remove("numpad--2"));
-  numpad.forEach((button) => button.classList.remove("numpad--1"));
-  colorButton.forEach((button) => button.classList.remove("color-button--2"));
-  colorButton.forEach((button) => button.classList.remove("color-button--1"));
-
-  header.classList.add("header--3");
-  headerButtons.classList.add("header__buttons--3");
-  body.classList.add("body--3");
-  screen.classList.add("screen--3");
-  screenH.classList.add("screen__h--3");
-  grid.classList.add("grid--3");
-  equalButton.classList.add("equal-button--3");
-  numpad.forEach((button) => button.classList.add("numpad--3"));
-  colorButton.forEach((button) => button.classList.add("color-button--3"));
+  adding(3)
+  removing(1)
+  removing(2)
 });
 
 /*===================================Calculator============================================*/
