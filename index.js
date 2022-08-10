@@ -15,7 +15,7 @@ const equalButton = document.querySelector(".equal-button");
 const numbers = document.querySelectorAll(".numbers");
 const operators = document.querySelectorAll(".operators");
 
-function adding(theme) {
+function addingTheme(theme) {
   header.classList.add(`header--${theme}`);
   headerButtons.classList.add(`header__buttons--${theme}`);
   body.classList.add(`body--${theme}`);
@@ -24,10 +24,12 @@ function adding(theme) {
   grid.classList.add(`grid--${theme}`);
   equalButton.classList.add(`equal-button--${theme}`);
   numpad.forEach((button) => button.classList.add(`numpad--${theme}`));
-  colorButton.forEach((button) => button.classList.add(`color-button--${theme}`));
+  colorButton.forEach((button) =>
+    button.classList.add(`color-button--${theme}`)
+  );
 }
 
-function removing(theme) {
+function removingTheme(theme) {
   header.classList.remove(`header--${theme}`);
   headerButtons.classList.remove(`header__buttons--${theme}`);
   body.classList.remove(`body--${theme}`);
@@ -36,49 +38,83 @@ function removing(theme) {
   grid.classList.remove(`grid--${theme}`);
   equalButton.classList.remove(`equal-button--${theme}`);
   numpad.forEach((button) => button.classList.remove(`numpad--${theme}`));
-  colorButton.forEach((button) => button.classList.remove(`color-button--${theme}`));
+  colorButton.forEach((button) =>
+    button.classList.remove(`color-button--${theme}`)
+  );
 }
 
-themeDefault.addEventListener("click", () => {
+function defaultTheme() {
   themeDefault.classList.remove("header__button1--inactive");
   themeDefault.classList.add("header__button1--active");
   themeLight.classList.remove("header__button2--active");
   themeLight.classList.add("header__button2--inactive");
   themeDark.classList.remove("header__button3--active");
   themeDark.classList.add("header__button3--inactive");
+  localStorage.clear;
+  localStorage.setItem("Theme", "1");
 
-  adding(1)
-  removing(2)
-  removing(3)
+  addingTheme(1);
+  removingTheme(2);
+  removingTheme(3);
+}
+
+themeDefault.addEventListener("click", () => {
+  defaultTheme();
 });
 
-themeLight.addEventListener("click", () => {
+function lightTheme() {
   themeDefault.classList.remove("header__button1--active");
   themeDefault.classList.add("header__button1--inactive");
   themeLight.classList.remove("header__button2--inactive");
   themeLight.classList.add("header__button2--active");
   themeDark.classList.remove("header__button3--active");
   themeDark.classList.add("header__button3--inactive");
+  localStorage.clear;
+  localStorage.setItem("Theme", "2");
 
-  adding(2)
-  removing(1)
-  removing(3)
+  addingTheme(2);
+  removingTheme(1);
+  removingTheme(3);
+}
+
+themeLight.addEventListener("click", () => {
+  lightTheme();
 });
 
-themeDark.addEventListener("click", () => {
+function darkTheme() {
   themeDefault.classList.remove("header__button1--active");
   themeDefault.classList.add("header__button1--inactive");
   themeLight.classList.remove("header__button2--active");
   themeLight.classList.add("header__button2--inactive");
   themeDark.classList.remove("header__button3--inactive");
   themeDark.classList.add("header__button3--active");
+  localStorage.clear;
+  localStorage.setItem("Theme", "3");
 
-  adding(3)
-  removing(1)
-  removing(2)
+  addingTheme(3);
+  removingTheme(1);
+  removingTheme(2);
+}
+
+themeDark.addEventListener("click", () => {
+  darkTheme();
 });
 
-/*===================================Calculator============================================*/
+const pageTheme = localStorage.getItem("Theme");
+
+switch (pageTheme) {
+  case "1":
+    defaultTheme();
+    break;
+  case "2":
+    lightTheme();
+    break;
+  case "3":
+    darkTheme();
+    break;
+  default:
+    break;
+}
 
 function print(someString) {
   let something = String(someString);
