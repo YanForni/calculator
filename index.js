@@ -100,6 +100,17 @@ themeDark.addEventListener("click", () => {
   darkTheme();
 });
 
+let darkPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+let lightPreference = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+if (lightPreference == true) {
+  lightTheme();
+}
+if (darkPreference == true) {
+  darkTheme();
+}
+  
 const pageTheme = localStorage.getItem("Theme");
 
 switch (pageTheme) {
@@ -134,26 +145,26 @@ numbers.forEach((button) => {
 });
 
 function number(x) {
-    if (firstNumber === result && operator == undefined) {
-        reset();
-    }
-    if (operator == undefined) {
-        firstNumber += x;
-        print(firstNumber);
-    } else {
-        secondNumber += x;
+  if (firstNumber === result && operator == undefined) {
+    reset();
+  }
+  if (operator == undefined) {
+    firstNumber += x;
+    print(firstNumber);
+  } else {
+    secondNumber += x;
     print(secondNumber);
   }
 }
 
 operators.forEach((button) => {
-    button.addEventListener("click", (op) => {
-      operation(op.target.dataset.value);
-    });
+  button.addEventListener("click", (op) => {
+    operation(op.target.dataset.value);
+  });
 });
 
 function operation(y) {
-    if (operator != undefined) {
+  if (operator != undefined) {
     equal();
     result = "";
     operator = y;
@@ -168,8 +179,8 @@ function dot() {
     reset();
   }
   let firstNumDot, secondNumDot, firstString, secondString;
-  firstString = String(firstNumber)
-  secondString = String(secondNumber)
+  firstString = String(firstNumber);
+  secondString = String(secondNumber);
   firstNumDot = !firstString.includes(".");
   secondNumDot = !secondString.includes(".");
   if (operator == undefined && firstNumDot) {
